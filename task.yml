@@ -19,4 +19,4 @@
       shell: microk8s status --wait-ready
 
     - name: Deploy sample pod
-      shell: microk8s kubectl apply -f https://k8s.io/examples/pods/simple-pod.yaml
+      shell: microk8s kubectl run nginx --image nginx --restart=Never
